@@ -8,5 +8,7 @@ public interface StudentService {
 
     void addStudent(Student student);
 
-    List getAllStudent();
+    Iterable getAllStudent();
+
+    Student findById(String id);
 }
