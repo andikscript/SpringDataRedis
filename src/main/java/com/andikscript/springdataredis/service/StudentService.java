@@ -1,12 +1,13 @@
 package com.andikscript.springdataredis.service;
 
 import com.andikscript.springdataredis.model.Student;
+import com.andikscript.springdataredis.model.StudentPost;
 
 import java.util.List;
 
 public interface StudentService {
 
-    void addStudent(Student student);
+    void addStudent(StudentPost studentPost);
 
     Iterable getAllStudent();
 
