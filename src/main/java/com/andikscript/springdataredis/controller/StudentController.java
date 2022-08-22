@@ -1,6 +1,7 @@
 package com.andikscript.springdataredis.controller;
 
 import com.andikscript.springdataredis.model.Student;
+import com.andikscript.springdataredis.model.StudentPost;
 import com.andikscript.springdataredis.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,8 +18,8 @@ public class StudentController {
     }
 
     @PostMapping(value = "/add", consumes = "application/json")
-    public ResponseEntity<?> addStudent(@RequestBody Student student) {
-        studentService.addStudent(student);
+    public ResponseEntity<?> addStudent(@RequestBody StudentPost studentPost) {
+        studentService.addStudent(studentPost);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body("created");
