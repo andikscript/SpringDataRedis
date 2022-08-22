@@ -15,6 +15,12 @@ public class Student {
 
     private Integer grade;
 
+    public Student(String id, String name, Integer grade) {
+        this.id = id;
+        this.name = name;
+        this.grade = grade;
+    }
+
     public String getId() {
         return id;
     }
