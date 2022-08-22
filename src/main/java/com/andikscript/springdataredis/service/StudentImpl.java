@@ -2,9 +2,11 @@ package com.andikscript.springdataredis.service;
 
 import com.andikscript.springdataredis.model.Student;
 import com.andikscript.springdataredis.repository.StudentRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class StudentImpl implements StudentService {
 
     private final StudentRepository studentRepository;
