@@ -1,10 +1,14 @@
 package com.andikscript.springdataredis.model;
 
+import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
+
+import java.util.UUID;
 
 @RedisHash("Student")
 public class Student {
 
+    @Id
     private String id;
 
     private String name;
